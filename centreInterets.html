@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centres d'Intérêts - Amraoui Anis</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/centreI.css">
-    <!-- Ajoutez Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centres d'intérêt — Anis Amraoui</title>
+  <meta name="description" content="Ce qui occupe Anis Amraoui en dehors du code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">À propos</a></li>
-                <li><a href="experience.html">Expérience</a></li>
-                <li><a href="Projetsrealises.html">Projets réalisés</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="centreInterets.html">Centres d'Intérêts</a></li>
-                <li><a href="cv.html">Mon CV</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-mark">AA</span>Anis Amraoui</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="experience.html">Expériences</a>
+        <a href="Projetsrealises.html">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="centreInterets.html" aria-current="page">Centres d'intérêt</a>
+        <a href="cv.html" class="nav-cta">Mon CV</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="centres-interets" class="section">
-        <h1>Mes Centres d'Intérêts</h1>
-        <div class="centres-list">
-            <div class="centre-item">
-                <h2><i class="fas fa-futbol"></i> Sport</h2>
-                <p>Passionné par le sport depuis toujours, je pratique régulièrement le football avec des amis. De plus, dans le passé, j'ai pratiqué l'aviron en club pendant plusieurs années. Ces disciplines m'ont permis de développer des compétences en travail d'équipe et en discipline, tout en me maintenant en bonne forme physique.</p>
-            </div>
-
-            <div class="centre-item">
-                <h2><i class="fas fa-music"></i> Musique</h2>
-                <p>La musique occupe une place importante dans ma vie. J'écoute une grande variété de genres musicaux. Pour moi, la musique est à la fois une forme d'expression et un moyen de me détendre.</p>
-            </div>
-
-            <div class="centre-item">
-                <h2><i class="fas fa-film"></i> Films et Séries</h2>
-                <p>Grand amateur de films et de séries, j'aime m'évader dans des histoires captivantes, qu'elles soient dramatiques, comiques ou fantastiques. Le cinéma est pour moi un excellent moyen d'explorer des univers variés et d'enrichir ma culture personnelle.</p>
-            </div>
-
-            <div class="centre-item">
-                <h2><i class="fas fa-laptop-code"></i> Développement Informatique</h2>
-                <p>Le développement informatique est l'une de mes passions. Je consacre beaucoup de mon temps à apprendre de nouveaux langages informatiques et à travailler sur des projets personnels. Mon objectif est de continuer à améliorer mes compétences en programmation.</p>
-            </div>
-
-            <div class="centre-item">
-                <h2><i class="fas fa-tools"></i> Hardware (Réparation de téléphones)</h2>
-                <p>En dehors du développement logiciel, j'ai une véritable passion pour le hardware, en particulier pour la réparation de téléphones. J'aime démonter, analyser et réparer des appareils, une activité qui me permet de mettre en pratique mes connaissances techniques et d'améliorer mes compétences en électronique.</p>
-            </div>
-        </div>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">En dehors du code</p>
+        <h1>Centres d'intérêt</h1>
+        <p class="lead">Ce qui m'occupe quand je ne suis pas devant un éditeur.</p>
+      </div>
     </section>
-    <br>
-    <footer>
-        <p>&copy; 2025 Amraoui Anis. Tous droits réservés.</p>
-    </footer>
+
+    <section class="section" style="padding-top:8px">
+      <div class="container grid grid-2">
+        <article class="card interest">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Réparation de téléphones</h3>
+          <p>
+            Démonter un appareil, trouver la panne, changer la pièce et le voir redémarrer :
+            c'est mon côté hardware. Ça m'a appris la patience et à ne jamais forcer sur une nappe.
+          </p>
+        </article>
+        <article class="card interest">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Projets perso</h3>
+          <p>
+            Je teste souvent de nouveaux langages ou outils sur des petits projets à côté des cours.
+            C'est comme ça que je me suis mis aux LLM et à React.
+          </p>
+        </article>
+        <article class="card interest">
+          <i class="fa-solid fa-futbol"></i>
+          <h3>Sport</h3>
+          <p>
+            Football régulièrement avec des amis, et plusieurs années d'aviron en club.
+            L'aviron, c'est un bon cours de travail d'équipe : si un seul rameur est en décalage, tout le bateau ralentit.
+          </p>
+        </article>
+        <article class="card interest">
+          <i class="fa-solid fa-film"></i>
+          <h3>Musique, films et séries</h3>
+          <p>
+            J'écoute un peu de tout, et je regarde beaucoup de films et de séries,
+            surtout quand l'histoire est bien construite.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span class="year">2026</span> Anis Amraoui</span>
+      <a href="mailto:amraouianis338@gmail.com">amraouianis338@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

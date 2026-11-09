@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV - Amraoui Anis</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Style global, si nécessaire -->
-    <link rel="stylesheet" href="css/cv.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Anis Amraoui</title>
+  <meta name="description" content="CV d'Anis Amraoui, recherche de stage en développement logiciel et web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">À propos</a></li>
-                <li><a href="experience.html">Expérience</a></li>
-                <li><a href="Projetsrealises.html">Projets réalisés</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="centreInterets.html">Centres Interets</a></li>
-                <li><a href="cv.html">Mon CV</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-mark">AA</span>Anis Amraoui</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="experience.html">Expériences</a>
+        <a href="Projetsrealises.html">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="centreInterets.html">Centres d'intérêt</a>
+        <a href="cv.html" class="nav-cta" aria-current="page">Mon CV</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="cv">
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">CV</p>
         <h1>Mon CV</h1>
-        <div class="pdf-container">
-            <embed src="pdf/AnisCV.pdf" width="100%" height="800px" type="application/pdf">
+        <p class="lead">Stage en développement logiciel / web, du 1er décembre 2026 au 14 mai 2027.</p>
+        <div class="btn-row">
+          <a href="pdf/CV_Anis_AMRAOUI.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Télécharger le PDF</a>
+          <a href="pdf/CV_Anis_AMRAOUI.pdf" class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Ouvrir dans un onglet</a>
         </div>
-        <br>
-        <p class="download-link">
-            <a href="pdf/AnisCV.pdf" download="AnisCV">Télécharger mon CV</a>
-        </p>
-        <br><br>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Amraoui Anis. Tous droits réservés.</p>
-    </footer>
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <iframe class="cv-frame" src="pdf/CV_Anis_AMRAOUI.pdf" title="CV d'Anis Amraoui"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span class="year">2026</span> Anis Amraoui</span>
+      <a href="mailto:amraouianis338@gmail.com">amraouianis338@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

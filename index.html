@@ -1,74 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Amraoui Anis</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
-    <!-- Ajoutez FontAwesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anis Amraoui — Développeur logiciel & web</title>
+  <meta name="description" content="Portfolio d'Anis Amraoui, étudiant en BUT Informatique à l'IUT d'Orsay. Recherche de stage en développement logiciel et web à partir de décembre 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">À propos</a></li>
-                <li><a href="experience.html">Expérience</a></li>
-                <li><a href="Projetsrealises.html">Projets réalisés</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="centreInterets.html">Centres Interets</a></li>
-                <li><a href="cv.html">Mon CV</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Conteneur principal pour les sections À propos et Me Contacter -->
-    <div class="main-container">
-        <!-- Section Me Contacter -->
-        <section id="contact" class="section">
-            <h1>Me Contacter</h1>
-            <div class="contact-container">
-                <div class="contact-item">
-                    <a href="https://linkedin.com/in/anis-amraoui-61930b347" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:amraouianis338@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                        <span>amraouianis338@gmail.com</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="tel:+33783387322">
-                        <i class="fas fa-phone"></i>
-                        <span>07 83 38 73 22</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section À propos de moi -->
-        <section id="about" class="section">
-            <h1>À propos de moi</h1>
-            <div class="about-container">
-                <!-- Image de profil -->
-                <img id="profile-picture" src="img/photoAnis.jpeg" alt="Amraoui Anis - Image de profil">
-                <!-- Texte à propos -->
-                <div class="about-text">
-                    <p>Bonjour, je m'appelle <strong>Amraoui Anis</strong>, et je suis actuellement en troisiéme année de BUT Informatique à l'IUT d'Orsay.</p>
-                    <p>Je me suis formé sur divers langages de programmation comme Python, Java, et C++, et j'ai travaillé sur plusieurs projets de groupe, développant ainsi des compétences en collaboration et gestion de projet.</p>
-                    <p>Passionné par l'informatique, j'ai réalisé de nombreux projets personnels, tels qu'un lecteur de fichiers audio, un distributeur de croquettes et un mini-robot conçu pour suivre une ligne noire.</p>
-                    <p>Mon objectif est de continuer à apprendre et à me perfectionner, particulièrement dans les domaines de l'intelligence artificielle, de la cybersécurité et du développement web.</p>
-                </div>
-            </div>
-        </section>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-mark">AA</span>Anis Amraoui</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="experience.html">Expériences</a>
+        <a href="Projetsrealises.html">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="centreInterets.html">Centres d'intérêt</a>
+        <a href="cv.html" class="nav-cta">Mon CV</a>
+      </nav>
     </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Amraoui Anis. Tous droits réservés.</p>
-    </footer>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Recherche de stage · déc. 2026 → mai 2027</span>
+          <h1>Anis Amraoui,<br><span>développeur logiciel & web.</span></h1>
+          <p class="lead">
+            Étudiant en BUT Informatique à l'IUT d'Orsay (Université Paris-Saclay).
+            J'aime construire des outils qui servent vraiment : une interface qui rassemble
+            des infos éparpillées, une appli qui reconnaît des cartes en direct, ou un petit Git
+            refait en C pour comprendre ce qu'il y a sous le capot.
+          </p>
+          <div class="btn-row">
+            <a href="Projetsrealises.html" class="btn btn-primary">Voir mes projets <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="pdf/CV_Anis_AMRAOUI.pdf" class="btn btn-ghost" download><i class="fa-solid fa-download"></i> Télécharger le CV</a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-location-dot"></i>Île-de-France</span>
+            <span><i class="fa-solid fa-car"></i>Permis B, véhiculé</span>
+            <span><i class="fa-solid fa-language"></i>Anglais B2</span>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="img/photoAnis.jpeg" alt="Photo d'Anis Amraoui">
+          <figcaption><strong>Dernier stage</strong><span>Analyste applicatif · Orano</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="stats">
+        <div class="stat"><b>2</b><span>stages en entreprise</span></div>
+        <div class="stat"><b>10</b><span>personnes sur le plus gros projet</span></div>
+        <div class="stat"><b>9</b><span>langages pratiqués</span></div>
+        <div class="stat"><b>1er déc.</b><span>disponible pour un stage</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Parcours</p>
+            <h2>Expériences récentes</h2>
+          </div>
+          <a href="experience.html" class="link-arrow">Tout le détail →</a>
+        </div>
+        <div class="grid grid-2">
+          <article class="card">
+            <p class="xp-date">Janv. 2026 — Mai 2026</p>
+            <h3 style="margin-top:8px">Orano</h3>
+            <p class="xp-role">Stagiaire analyste applicatif</p>
+            <p style="color:var(--ink-2);margin:12px 0 16px">
+              Cartographie des applications du SI et de leurs échanges, pour que les équipes
+              voient enfin qui parle à qui. Documentation technique et fonctionnelle sur Confluence et ARIS.
+            </p>
+            <div class="chips"><span class="chip">Jira Assets</span><span class="chip">Confluence</span><span class="chip">ARIS</span><span class="chip">Git</span></div>
+          </article>
+          <article class="card">
+            <p class="xp-date">Mai 2025 — Août 2025</p>
+            <h3 style="margin-top:8px">Université Paris-Dauphine</h3>
+            <p class="xp-role">Stagiaire développement d'outils internes</p>
+            <p style="color:var(--ink-2);margin:12px 0 16px">
+              Une interface web qui centralise les informations sur les machines virtuelles,
+              alimentée par les API de vCenter, Veeam, Centreon et Satellite.
+            </p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">PHP</span><span class="chip">API REST</span><span class="chip">Docker</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sélection</p>
+            <h2>Projets à la une</h2>
+          </div>
+          <a href="Projetsrealises.html" class="link-arrow">Les 10 projets →</a>
+        </div>
+        <div class="grid grid-3">
+          <a href="Projetsrealises.html#traduction" class="card mini-project">
+            <span class="project-kind" style="align-self:start">IA · Web</span>
+            <h3>Traduction d'images par IA</h3>
+            <p>Extraire le texte d'une image et le traduire avec un LLM, depuis une interface React.</p>
+            <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">LLM</span><span class="chip">PostgreSQL</span></div>
+          </a>
+          <a href="Projetsrealises.html#bridge" class="card mini-project">
+            <span class="project-kind" style="align-self:start">IA · Web · Équipe</span>
+            <h3>Enregistrement de parties de bridge</h3>
+            <p>Une caméra filme la table, un modèle reconnaît les cartes jouées et la partie s'enregistre toute seule.</p>
+            <div class="chips"><span class="chip">Django</span><span class="chip">Roboflow</span><span class="chip">MySQL</span></div>
+          </a>
+          <a href="Projetsrealises.html#minigit" class="card mini-project">
+            <span class="project-kind" style="align-self:start">Système · C</span>
+            <h3>MiniGit</h3>
+            <p>Une version simplifiée de Git en C : init, add, status, commit et log.</p>
+            <div class="chips"><span class="chip">C</span><span class="chip">Fichiers</span><span class="chip">Makefile</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="card contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Vous avez un stage à pourvoir ?</h2>
+            <p>
+              Je suis disponible du 1er décembre 2026 au 14 mai 2027, avec un début flexible.
+              Le plus simple, c'est un mail ou un message sur LinkedIn — je réponds vite.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:amraouianis338@gmail.com"><i class="fa-solid fa-envelope"></i>amraouianis338@gmail.com</a>
+            <a href="https://linkedin.com/in/anis-amraoui-61930b347" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/anis-amraoui</a>
+            <a href="tel:+33783387322"><i class="fa-solid fa-phone"></i>07 83 38 73 22</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span class="year">2026</span> Anis Amraoui</span>
+      <a href="mailto:amraouianis338@gmail.com">amraouianis338@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

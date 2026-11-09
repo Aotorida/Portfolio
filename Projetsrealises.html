@@ -1,64 +1,366 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets réalisés - Amraoui Anis</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/prjtReal.css">
-    <!-- Ajoutez Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Anis Amraoui</title>
+  <meta name="description" content="Projets réalisés par Anis Amraoui : IA, web, C, C++, C#, Arduino.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">À propos</a></li>
-                <li><a href="experience.html">Expérience</a></li>
-                <li><a href="Projetsrealises.html">Projets réalisés</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="centreInterets.html">Centres d'Intérêts</a></li>
-                <li><a href="cv.html">Mon CV</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-mark">AA</span>Anis Amraoui</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="experience.html">Expériences</a>
+        <a href="Projetsrealises.html" aria-current="page">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="centreInterets.html">Centres d'intérêt</a>
+        <a href="cv.html" class="nav-cta">Mon CV</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="Projetsrealises" class="section">
-        <h1><i class="fas fa-project-diagram"></i> Mes Projets</h1>
-
-        <h2>Projets réalisés</h2>
-        
-        <div class="project-list">
-            <div class="project-item">
-                <strong><i class="fas fa-music"></i> Application de lecteur MP3</strong> (2022)
-                <p>Développement d'une application de lecteur MP3 en C#. L'objectif était de créer un lecteur simple et intuitif permettant d'écouter des fichiers audio locaux, de créer des playlists et de gérer les fichiers audio.</p>
-                <p><em>Technologies utilisées : C#, Windows Forms</em></p>
-            </div>
-
-            <div class="project-item">
-                <strong><i class="fas fa-vote-yea"></i> Application de Vote en ligne</strong> (Septembre 2024 - Janvier 2025)
-                <p>Création d'un site web et d'une application de vote en ligne permettant aux utilisateurs de créer des groupes et de participer à des sondages sur des choix collectifs. L'application gérait les votes en temps réel et permettait de visualiser les résultats.</p>
-                <p><em>Technologies utilisées : PHP, MySQL, API REST, HTML, CSS, JavaScript</em></p>
-            </div>
-
-            <div class="project-item">
-                <strong><i class="fas fa-paw"></i> Distributeur Automatique de Croquettes</strong> (Janvier 2023 - Juillet 2023)
-                <p>Dans le cadre d'un projet réalisé en équipe, j’ai conçu et développé un distributeur automatique de croquettes. Ce projet combinait des aspects hardware et software, avec une carte Arduino et un prototype en carton pour contrôler son fonctionnement.</p>
-                <p><em>Technologies utilisées : Arduino, Electronique, Prototypage</em></p>
-            </div>
-
-            <div class="project-item">
-                
-                <strong><a href="https://webdev.iut-orsay.fr/~aamrao1/cwac/html/index.html"><i class="fas fa-school"></i> </a>Création d'un Site Web pour une école fictive</strong> (Septembre 2023 - Décembre 2023)
-                <p>Création d'un site web pour présenter une école fictive. Ce projet m’a permis de perfectionner mes compétences en HTML, CSS et JavaScript, ainsi qu'en intégration de fonctionnalités interactives sur le site.</p>
-                <p><em>Technologies utilisées : HTML, CSS, JavaScript</em></p>
-            </div>
-        </div>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Projets</p>
+        <h1>Ce que j'ai construit</h1>
+        <p class="lead">
+          Des projets d'école, d'équipe et perso, du plus récent au plus ancien.
+          Pour chacun : le problème de départ, ce que j'ai fait concrètement, et avec quels outils.
+        </p>
+      </div>
     </section>
-    <br>
 
-    <footer>
-        <p>&copy; 2025 Amraoui Anis. Tous droits réservés.</p>
-    </footer>
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button class="filter" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter" data-filter="ia" aria-pressed="false">IA</button>
+          <button class="filter" data-filter="c" aria-pressed="false">C / C++</button>
+          <button class="filter" data-filter="csharp" aria-pressed="false">C#</button>
+          <button class="filter" data-filter="embarque" aria-pressed="false">Embarqué</button>
+        </div>
+
+        <div class="projects">
+
+          <article class="card project" id="traduction" data-tags="web ia">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2026</span>
+                <span class="project-kind">IA · Web</span>
+              </div>
+              <h3>Application de traduction d'images par IA</h3>
+              <p class="summary">
+                Une photo d'un menu, d'un panneau ou d'un document dans une langue qu'on ne lit pas :
+                l'application en extrait le texte grâce à des modèles d'IA, puis le fait traduire par un LLM.
+              </p>
+              <ul class="bullets">
+                <li>Développement de l'interface utilisateur en React et TypeScript : envoi de l'image, suivi du traitement, affichage du texte original et de sa traduction.</li>
+                <li>Intégration des briques d'intelligence artificielle et d'un LLM pour l'analyse et la traduction du contenu.</li>
+                <li>Mise en place d'une base PostgreSQL pour gérer les données de l'application.</li>
+                <li>Communication entre le front et le back via une API REST, le tout lancé avec Docker.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2026</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Brancher un LLM dans une vraie application, et pas seulement dans un chat.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">LLM</span><span class="chip">API REST</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">Git</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="minigit" data-tags="c">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2026</span>
+                <span class="project-kind">Système · C</span>
+              </div>
+              <h3>MiniGit — un Git simplifié en C</h3>
+              <p class="summary">
+                On utilise Git tous les jours sans trop savoir comment il marche. Le but ici était de
+                le refaire en C, en version réduite, avec les cinq commandes de base.
+              </p>
+              <ul class="bullets">
+                <li><code>init</code> : création du dépôt et de son arborescence interne.</li>
+                <li><code>add</code> : ajout de fichiers à l'index (la zone de préparation).</li>
+                <li><code>status</code> : comparaison entre le répertoire de travail, l'index et le dernier commit.</li>
+                <li><code>commit</code> : enregistrement d'un instantané des fichiers avec son message et un lien vers le commit parent.</li>
+                <li><code>log</code> : parcours de l'historique, du commit le plus récent au premier.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2026</dd></div>
+                <div><dt>Cadre</dt><dd>Projet universitaire</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>La manipulation de fichiers et de pointeurs en C, et comment Git stocke vraiment l'historique.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">C</span><span class="chip">Système de fichiers</span><span class="chip">Makefile</span><span class="chip">Git</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="myasan" data-tags="c">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2026</span>
+                <span class="project-kind">Système · C</span>
+              </div>
+              <h3>myAsan — détecteur d'erreurs mémoire</h3>
+              <p class="summary">
+                Ma propre version, simplifiée, d'AddressSanitizer : un outil qui surveille la mémoire
+                d'un programme C et signale les erreurs que le compilateur ne voit pas.
+              </p>
+              <ul class="bullets">
+                <li>Interception des allocations et libérations (<code>malloc</code>, <code>free</code>…) pour suivre chaque bloc mémoire.</li>
+                <li>Détection des fuites mémoire à la fin de l'exécution.</li>
+                <li>Détection des doubles libérations et des <code>free</code> sur des pointeurs invalides.</li>
+                <li>Rapport clair qui indique le type d'erreur et le bloc concerné.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2026</dd></div>
+                <div><dt>Cadre</dt><dd>Projet universitaire</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Comment la mémoire est réellement gérée en C, et pourquoi ces bugs sont si difficiles à trouver.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">C</span><span class="chip">Gestion mémoire</span><span class="chip">Débogage</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="bridge" data-tags="web ia">
+            <div>
+              <div class="project-top">
+                <span class="project-year">Sept. 2025 — Janv. 2026</span>
+                <span class="project-kind">IA · Web · Équipe</span>
+              </div>
+              <h3>Application d'enregistrement de parties de bridge</h3>
+              <p class="summary">
+                Au bridge, noter chaque carte jouée à la main est long et source d'erreurs. Notre application
+                suit une partie physique et l'enregistre automatiquement.
+              </p>
+              <ul class="bullets">
+                <li>Intégration d'un module d'IA (Roboflow) qui reconnaît en direct les cartes posées sur la table et enregistre les coups.</li>
+                <li>Développement de l'application web avec Django et d'une API REST, données stockées dans MySQL.</li>
+                <li>Travail à 10 en méthode Agile Scrum : sprints, backlog et suivi des tâches sur Jira, code partagé sur Git.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>5 mois</dd></div>
+                <div><dt>Équipe</dt><dd>10 personnes, Scrum</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Faire tourner un modèle de vision dans une vraie application, et s'organiser à dix sur le même code.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">Roboflow</span><span class="chip">MySQL</span><span class="chip">API REST</span><span class="chip">Jira</span><span class="chip">Git</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="magic-lamp" data-tags="csharp">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2025</span>
+                <span class="project-kind">Mobile · C#</span>
+              </div>
+              <h3>Magic Lamp — piloter une lampe depuis son téléphone</h3>
+              <p class="summary">
+                Une application mobile en C# pour contrôler une lampe connectée : l'allumer, l'éteindre
+                et choisir sa couleur sans toucher à la lampe.
+              </p>
+              <ul class="bullets">
+                <li>Conception de l'interface mobile : bouton marche/arrêt, sélecteur de couleur et réglage de la luminosité.</li>
+                <li>Conversion de la couleur choisie en valeurs RGB et envoi des commandes à la lampe.</li>
+                <li>Gestion de la connexion avec la lampe et des cas où elle ne répond pas.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2025</dd></div>
+                <div><dt>Cadre</dt><dd>Projet universitaire</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Le développement mobile en C#, et faire communiquer une appli avec un objet physique.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">Application mobile</span><span class="chip">Objet connecté</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="bibliotheque" data-tags="c">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2025</span>
+                <span class="project-kind">Console · C++</span>
+              </div>
+              <h3>Gestionnaire de bibliothèque en C++</h3>
+              <p class="summary">
+                Un petit programme en console pour gérer les livres et les emprunts d'une bibliothèque.
+                C'était mon premier projet orienté objet en C++.
+              </p>
+              <ul class="bullets">
+                <li>Modélisation avec des classes <code>Livre</code>, <code>Adherent</code> et <code>Bibliotheque</code>.</li>
+                <li>Ajout, recherche et suppression de livres, gestion des emprunts et des retours.</li>
+                <li>Stockage des données en mémoire avec <code>std::vector</code> et sauvegarde dans un fichier texte.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2025</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Les bases de la programmation objet en C++ : classes, encapsulation, STL.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">C++</span><span class="chip">POO</span><span class="chip">STL</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="vote" data-tags="web">
+            <div>
+              <div class="project-top">
+                <span class="project-year">Oct. 2024 — Janv. 2025</span>
+                <span class="project-kind">Web · Java</span>
+              </div>
+              <h3>Application de vote en ligne</h3>
+              <p class="summary">
+                Un site web et une application Java pour créer des groupes, lancer des sondages
+                et suivre les résultats en temps réel.
+              </p>
+              <ul class="bullets">
+                <li>Conception d'une API REST en PHP, avec des échanges en JSON, partagée entre le site et l'application Java.</li>
+                <li>Modélisation de la base de données MySQL (utilisateurs, groupes, propositions, votes).</li>
+                <li>Interface web dynamique en HTML, CSS et JavaScript, résultats mis à jour sans recharger la page.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>4 mois</dd></div>
+                <div><dt>Cadre</dt><dd>Projet universitaire</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Penser une API pour qu'elle serve deux clients différents.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">PHP</span><span class="chip">API REST</span><span class="chip">JSON</span><span class="chip">MySQL</span><span class="chip">Java</span><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="ecole" data-tags="web">
+            <div>
+              <div class="project-top">
+                <span class="project-year">Sept. 2023 — Déc. 2023</span>
+                <span class="project-kind">Web</span>
+              </div>
+              <h3><a href="https://webdev.iut-orsay.fr/~aamrao1/cwac/html/index.html" target="_blank" rel="noopener">Site web d'une école fictive <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7em"></i></a></h3>
+              <p class="summary">
+                Un site vitrine complet pour présenter une école imaginaire : formations, vie de l'école, contact.
+              </p>
+              <ul class="bullets">
+                <li>Intégration de plusieurs pages en HTML et CSS, avec une mise en page responsive.</li>
+                <li>Ajout d'interactions en JavaScript pour rendre la navigation plus vivante.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>4 mois</dd></div>
+                <div><dt>Cadre</dt><dd>Projet universitaire</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="croquettes" data-tags="embarque">
+            <div>
+              <div class="project-top">
+                <span class="project-year">Janv. 2023 — Juil. 2023</span>
+                <span class="project-kind">Embarqué · Équipe</span>
+              </div>
+              <h3>Distributeur automatique de croquettes</h3>
+              <p class="summary">
+                Un projet d'équipe qui mêlait matériel et logiciel : nourrir un animal à heures fixes,
+                sans être là.
+              </p>
+              <ul class="bullets">
+                <li>Conception et construction du prototype du distributeur en carton.</li>
+                <li>Programmation de la carte Arduino en C++ pour contrôler le mécanisme de distribution.</li>
+                <li>Câblage des composants électroniques et tests sur le prototype.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>7 mois</dd></div>
+                <div><dt>Équipe</dt><dd>Projet de groupe</dd></div>
+                <div><dt>Ce que j'ai appris</dt><dd>Passer d'une idée à un objet qui fonctionne, et répartir le travail entre le hardware et le code.</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">Arduino</span><span class="chip">C++</span><span class="chip">Électronique</span><span class="chip">Prototypage</span></div>
+              </div>
+            </aside>
+          </article>
+
+          <article class="card project" id="mp3" data-tags="csharp">
+            <div>
+              <div class="project-top">
+                <span class="project-year">2022</span>
+                <span class="project-kind">Desktop · C#</span>
+              </div>
+              <h3>Lecteur MP3</h3>
+              <p class="summary">
+                Un lecteur audio simple pour écouter ses fichiers locaux et organiser des playlists.
+                Un de mes tout premiers projets.
+              </p>
+              <ul class="bullets">
+                <li>Lecture, pause et navigation entre les morceaux.</li>
+                <li>Création et gestion de playlists.</li>
+              </ul>
+            </div>
+            <aside class="project-aside">
+              <dl>
+                <div><dt>Période</dt><dd>2022</dd></div>
+                <div><dt>Cadre</dt><dd>Projet personnel</dd></div>
+              </dl>
+              <div>
+                <h4>Stack</h4>
+                <div class="chips"><span class="chip">C#</span><span class="chip">Windows Forms</span></div>
+              </div>
+            </aside>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span class="year">2026</span> Anis Amraoui</span>
+      <a href="mailto:amraouianis338@gmail.com">amraouianis338@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

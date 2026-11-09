@@ -1,126 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences - Amraoui Anis</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/competences.css">
-    <!-- Ajout de Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences — Anis Amraoui</title>
+  <meta name="description" content="Compétences techniques d'Anis Amraoui et les projets où elles ont été utilisées.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">À propos</a></li>
-                <li><a href="experience.html">Expérience</a></li>
-                <li><a href="Projetsrealises.html">Projets réalisés</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="centreInterets.html">Centres d'intérêts</a></li>
-                <li><a href="cv.html">Mon CV</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-mark">AA</span>Anis Amraoui</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="experience.html">Expériences</a>
+        <a href="Projetsrealises.html">Projets</a>
+        <a href="competences.html" aria-current="page">Compétences</a>
+        <a href="centreInterets.html">Centres d'intérêt</a>
+        <a href="cv.html" class="nav-cta">Mon CV</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="competences" class="section">
-        <h1><i class="fas fa-code"></i> Mes Compétences</h1>
-        
-        <h2><i class="fas fa-users"></i> Soft Skills</h2>
-        <div class="skills-container">
-            <div class="soft-skill" onclick="openModal('Capacité à travailler efficacement en équipe.')">
-                <div class="text">Travail en Équipe</div>
-            </div>
-            <div class="soft-skill" onclick="openModal('Excellentes compétences en communication.')">
-                <div class="text">Communication</div>
-            </div>
-            <div class="soft-skill" onclick="openModal('Adaptabilité face aux nouvelles situations.')">
-                <div class="text">Adaptabilité</div>
-            </div>
-            <div class="soft-skill" onclick="openModal('Organisation et gestion du temps.')">
-                <div class="text">Rigueur</div>
-            </div>
-            <div class="soft-skill" onclick="openModal('Autonomie dans le travail et initiative.')">
-                <div class="text">Autonomie</div>
-            </div>
-        </div>
-        <br><br>
-        <h2><i class="fas fa-laptop-code"></i> Hard Skills</h2>
-        <div class="skills-container">
-            <div class="hard-skill" onclick="openModal('Langage de balisage pour la structure des pages web.')">
-                <img src="img/html.png" alt="HTML">
-                <div class="text">HTML</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Feuilles de style pour la mise en forme des pages.')">
-                <img src="img/css.png" alt="CSS">
-                <div class="text">CSS</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage de programmation pour rendre les pages interactives.')">
-                <img src="img/javascript.png" alt="JavaScript">
-                <div class="text">JavaScript</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage de programmation orienté objet.')">
-                <img src="img/java.png" alt="Java">
-                <div class="text">Java</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage de programmation pour l\'intelligence artificielle.')">
-                <img src="img/python.png" alt="Python">
-                <div class="text">Python</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage de programmation bas niveau pour le développement système.')">
-                <img src="img/cplusplus.png" alt="C++">
-                <div class="text">C++</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage de programmation pour la création de systèmes.')">
-                <img src="img/c.png" alt="C">
-                <div class="text">C</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage pour la gestion et l\'interrogation des bases de données.')">
-                <img src="img/sql.png" alt="SQL">
-                <div class="text">SQL</div>
-            </div>
-            <div class="hard-skill" onclick="openModal('Langage pour interroger des données RDF.')">
-                <img src="img/sparql.png" alt="SparQL">
-                <div class="text">SparQL</div>
-            </div>
-        </div>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Compétences</p>
+        <h1>Mes outils, et où je m'en suis servi</h1>
+        <p class="lead">
+          Plutôt qu'une liste de logos, chaque compétence est reliée à un stage ou à un projet concret.
+        </p>
+      </div>
     </section>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <h3>Description</h3>
-            <p id="modal-text"></p>
+    <section class="section" style="padding-top:8px">
+      <div class="container grid grid-2">
+
+        <div class="card skill-group">
+          <h3><i class="fa-solid fa-code"></i>Langages</h3>
+          <p>Du plus pratiqué au moins pratiqué.</p>
+          <table class="skill-table">
+            <tr><th>Python<span class="level">usage régulier</span></th><td>Stage Dauphine (API), application de bridge (Django), traduction d'images par IA</td></tr>
+            <tr><th>Java<span class="level">usage régulier</span></th><td>Application de vote en ligne, projets universitaires</td></tr>
+            <tr><th>C<span class="level">usage régulier</span></th><td>MiniGit, myAsan</td></tr>
+            <tr><th>TypeScript<span class="level">projets</span></th><td>Traduction d'images par IA (React)</td></tr>
+            <tr><th>JavaScript<span class="level">projets</span></th><td>Stage Dauphine, vote en ligne, site de l'école fictive</td></tr>
+            <tr><th>PHP<span class="level">projets</span></th><td>API REST du vote en ligne, stage Dauphine</td></tr>
+            <tr><th>SQL<span class="level">projets</span></th><td>MySQL (bridge, vote), PostgreSQL (traduction IA)</td></tr>
+            <tr><th>C#<span class="level">bases</span></th><td>Magic Lamp (mobile), lecteur MP3</td></tr>
+            <tr><th>C++<span class="level">bases</span></th><td>Gestionnaire de bibliothèque, Arduino (distributeur de croquettes)</td></tr>
+          </table>
         </div>
+
+        <div class="grid" style="align-content:start">
+          <div class="card skill-group">
+            <h3><i class="fa-solid fa-globe"></i>Web & bases de données</h3>
+            <p>Du front à la base, en passant par l'API.</p>
+            <table class="skill-table">
+              <tr><th>React</th><td>Traduction d'images par IA</td></tr>
+              <tr><th>Django</th><td>Application de bridge</td></tr>
+              <tr><th>API REST</th><td>Vote en ligne, bridge, Dauphine, traduction IA</td></tr>
+              <tr><th>HTML / CSS</th><td>Tous mes projets web, dont ce site</td></tr>
+              <tr><th>MySQL · PostgreSQL</th><td>Modélisation et requêtes</td></tr>
+            </table>
+          </div>
+
+          <div class="card skill-group">
+            <h3><i class="fa-solid fa-brain"></i>Intelligence artificielle</h3>
+            <p>Intégrer l'IA dans une application, pas seulement l'utiliser.</p>
+            <table class="skill-table">
+              <tr><th>LLM via API</th><td>Traduction d'images, prompt engineering</td></tr>
+              <tr><th>Vision par ordinateur</th><td>Reconnaissance de cartes avec Roboflow (bridge)</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card skill-group">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i>Outils & environnements</h3>
+          <p>Ce que j'ai manipulé en stage et en équipe.</p>
+          <table class="skill-table">
+            <tr><th>Git</th><td>Tous les projets et les deux stages</td></tr>
+            <tr><th>Docker</th><td>Stage Dauphine, traduction IA</td></tr>
+            <tr><th>Jira · Confluence</th><td>Scrum sur le bridge, documentation chez Orano</td></tr>
+            <tr><th>ARIS</th><td>Modélisation du SI chez Orano</td></tr>
+            <tr><th>vCenter · Veeam · Centreon · Satellite</th><td>Outils d'exploitation intégrés à Dauphine</td></tr>
+          </table>
+        </div>
+
+        <div class="card skill-group">
+          <h3><i class="fa-solid fa-people-group"></i>Savoir-être</h3>
+          <p>Ce que mes expériences m'ont fait travailler.</p>
+          <ul class="bullets" style="gap:14px">
+            <li class="soft"><b>Travail en équipe</b><span>Dix personnes en Scrum sur le projet bridge, avec des sprints et des revues.</span></li>
+            <li class="soft"><b>Autonomie</b><span>Deux stages où il fallait comprendre un existant seul avant de produire.</span></li>
+            <li class="soft"><b>Rigueur</b><span>Documentation d'un SI d'entreprise, où chaque erreur se paie plus tard.</span></li>
+            <li class="soft"><b>Communication</b><span>Échanges avec des équipes métier et techniques pour comprendre leurs besoins.</span></li>
+          </ul>
+          <h3 style="margin-top:24px"><i class="fa-solid fa-language"></i>Langues</h3>
+          <table class="skill-table" style="margin-top:10px">
+            <tr><th>Français</th><td>Langue maternelle</td></tr>
+            <tr><th>Anglais</th><td>B2 — lecture de documentation technique au quotidien</td></tr>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span class="year">2026</span> Anis Amraoui</span>
+      <a href="mailto:amraouianis338@gmail.com">amraouianis338@gmail.com</a>
     </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Amraoui Anis. Tous droits réservés.</p>
-    </footer>
-
-    <script>
-        // Fonctions pour la modale
-        function openModal(text) {
-            const modal = document.getElementById('modal');
-            const modalText = document.getElementById('modal-text');
-            modalText.textContent = text;
-            modal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.style.display = 'none';
-        }
-
-        // Fermer la modale en cliquant à l'extérieur
-        window.onclick = function(event) {
-            const modal = document.getElementById('modal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        };
-    </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
